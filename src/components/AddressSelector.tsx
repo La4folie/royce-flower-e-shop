@@ -31,7 +31,7 @@ export const AddressSelector: React.FC<AddressAutocompleteProps> = React.memo(
         };
 
         useEffect(() => {
-            loadGoogleMaps('AIzaSyCGpZhco-o96FCJ-73q-d_z6AFtWbfKUx8')
+            loadGoogleMaps('api-key')
                 .then(() => {
                     setIsApiLoaded(true);
                 })
