@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" style="--tg-viewport-height: 100vh; --tg-viewport-stable-height: 100vh">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="Royce Flower Corner"
+      content="Я від тебе квітну"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>ROYCE</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.Telegram && window.Telegram.WebApp) {
+          window.Telegram.WebApp.expand();
+          window.Telegram.WebApp.disableVerticalSwipes();
+        }
+      });
+    </script>
+  </head>
+  <body ontouchstart style="top: auto;" class="tc-using-mouse">
+    <div id="root"></div>
+  </body>
+</html>
